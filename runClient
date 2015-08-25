@@ -1,0 +1,4 @@
+# if we don't put the "/" at the end of the URL netty reports 
+# IllegalArgumentException "empty text" right away.
+mvn  -o exec:java -Dexec.classpathScope=test -Dexec.mainClass=munni.netty.HttpSnoopClient -Dexec.args="http://127.0.0.1:8080/" -DskipTests=false
+#mvn -o -Pclient test

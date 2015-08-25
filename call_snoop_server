@@ -1,0 +1,4 @@
+#curl -X POST -d "this is just post data" http://localhost:8080
+# with headers
+#curl -X POST --header "X-B3Header: futball-1"-d "this is just post data" http://localhost:8080
+curl -H "Content-Type: application/json" -H "Accept: application/json" -H "X-B3Header: futball-1" -d "this is just post data" -X POST http://127.0.0.1:8080

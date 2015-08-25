@@ -1,0 +1,2 @@
+mvn  -o exec:java -Dexec.classpathScope=test -Dexec.mainClass=munni.netty.HttpSnoopServer -DskipTests=false
+#mvn -o -Pclient test
